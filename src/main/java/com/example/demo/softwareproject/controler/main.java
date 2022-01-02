@@ -26,7 +26,7 @@ public class main {
         SignUp signUpOption = new SignUp();
         SignIn signInOption = new SignIn();
 
-        adminController.addAdminsAndPublicHolidays ();
+        adminController.addAdminsAndPublicHolidays ();//login for all admins and initialize all public holidays
 
         Scanner scan = new Scanner(System.in);
         while (true) {
@@ -88,8 +88,7 @@ public class main {
                             System.out.println(" 3-Logout");
                             int clientChoice1 = scan.nextInt();
 
-                            // when user press 1 to pick a ride we first make sure that
-                            // there are no other active rides for that user
+
                             if (clientChoice1 == 1) {
 
                                 if (client.getCount() == 0) {
@@ -203,19 +202,7 @@ public class main {
 
 
                                         continue;
-                                        /////////////////////////////////////////////////////////////////////
-//                                        scan = new Scanner(System.in);
-//                                        String rateChoice = scan.nextLine();
-                                        ////////////////////////////////////////////////////////////////////////
-                                        // we will add another option to client to be able to list all of finished rides so he can rate them or delete them
-                                        // average rate for driver
-                                        // create arraylist in driver to be able to show all users rates
-                                        // handle menu
-                                        // in admin menu add reject driver request feature
-                                        // sequence diagram
-                                        // trello pic
-                                        // github link
-                                        // sprint 1 doc
+
                                     } else {
                                         clientController.removeRideRequestFromDriverRides(clientRide);
                                         continue;
@@ -226,8 +213,7 @@ public class main {
                             } else if (clientChoice1 == 3) {
                                 break;
 
-                                // client is waiting for the requested ride being accepted
-                                // by a driver that will set offer for this ride
+
 
                             } else {
                                 System.out.println("not found");
