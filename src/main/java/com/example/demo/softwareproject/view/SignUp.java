@@ -1,10 +1,9 @@
 package com.example.demo.softwareproject.view;
 
-
 import com.example.demo.softwareproject.model.Client;
 import com.example.demo.softwareproject.model.DataBaseSystem;
 import com.example.demo.softwareproject.model.Driver;
-
+// SignUp class 
 public class SignUp {
     DataBaseSystem dataBaseSystem= DataBaseSystem.getInstance();
     public boolean clientSignUp(String userName, String email, String password , String birthDate ) {
