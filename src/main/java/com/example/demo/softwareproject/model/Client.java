@@ -16,8 +16,10 @@ public class Client extends User {
     }
 
 
+//for get BirthDate
+    public String getBirthDate ( )
 
-    public String getBirthDate ( ) {
+    {
         return birthDate;
     }
 
